@@ -5,9 +5,7 @@ import time
 def initFile():
     localTime = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
     with open("ASN.China.list", "w") as asnFile:
-        asnFile.write("// ASN Information in China. (https://github.com/missuo/ASN-China) \n")
         asnFile.write("// Last Updated: UTC " + localTime + "\n")
-        asnFile.write("// Made by Vincent, All rights reserved. " + "\n\n")
 
 def saveLatestASN():
     url = "https://bgp.he.net/country/CN"
