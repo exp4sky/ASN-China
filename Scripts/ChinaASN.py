@@ -1,5 +1,5 @@
 import requests
-from bs4 import BeautifulSoup
+from lxml import BeautifulSoup
 
 # 发起HTTP请求并获取页面内容
 url = "https://bgp.he.net/country/CN"
