@@ -2,7 +2,7 @@
 import requests
 
 # 获取IPv4地址列表
-v4China = "https://raw.githubusercontent.com/cbuijs/ipasn/master/country-asia-china4.list"
+v4China = "https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt"
 r = requests.get(v4China)
 
 # 读取原始IPv4地址文件并转换成单独行的IP-CIDR形式
