@@ -10,7 +10,7 @@ original_content = r.text.split('\n')
 ip_cidr_content = []
 
 for ip in original_content:
-    if ip.strip():  # 忽略空行
+    if ip.strip() and '.' in ip:
         ip_cidr = "IP-CIDR," + ip.strip()  # 添加 "IP-CIDR," 前缀
         ip_cidr_content.append(ip_cidr)
 
@@ -18,4 +18,3 @@ for ip in original_content:
 with open("IPv4.China.list", "w") as cidr_file:
     for line in ip_cidr_content:
         cidr_file.write(line + '\n')
-
